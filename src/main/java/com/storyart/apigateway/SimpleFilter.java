@@ -29,7 +29,7 @@ public class SimpleFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         Gson gson= new Gson();
-        System.out.println(gson.toJson(request));
+        System.out.println(gson.toJson(request,HttpServletRequest.class));
         return null;
     }
 
