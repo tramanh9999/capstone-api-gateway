@@ -39,4 +39,7 @@ public class ApiGatewayApplication implements WebMvcConfigurer {
     @Bean
     public  SimpleFilter simpleFilter(){return new SimpleFilter();
     }
+
+
+
 }
