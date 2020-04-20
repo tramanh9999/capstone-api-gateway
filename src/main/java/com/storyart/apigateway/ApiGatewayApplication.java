@@ -34,4 +34,9 @@ public class ApiGatewayApplication implements WebMvcConfigurer {
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
     }
+
+
+    @Bean
+    public  SimpleFilter simpleFilter(){return new SimpleFilter();
+    }
 }
